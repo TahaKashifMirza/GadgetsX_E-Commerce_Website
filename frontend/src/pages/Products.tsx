@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard';
 import { products, categories } from '../data/products';
 
 const Products: React.FC = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [sortBy, setSortBy] = useState('featured');
   const [priceRange, setPriceRange] = useState([0, 5000]);
