@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Filter, Grid, List, SlidersHorizontal } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
-import LoadingSpinner from '../components/LoadingSpinner';
 import { products, categories } from '../data/products';
-import { Product } from '../types';
 
 const Products: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
